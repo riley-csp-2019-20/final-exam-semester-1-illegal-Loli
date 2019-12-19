@@ -20,12 +20,12 @@
 #Add a feature to change colors
 #
 
-#import required libraries
+#imported required libraries
 import turtle as trtl
 import random
 thick =1
 
-#create turtle
+#creates turtle
 drawer = trtl.Turtle()
 
 
@@ -64,7 +64,7 @@ def bigger_pen():
 
 # this code makes the pensize smaller
 def smaller_pen():
-    drawer.pensize(thick +- 1)  
+    drawer.pensize(thick - 1)  
    
 
 
@@ -82,7 +82,7 @@ def clear():
 
 # this code makes the pensize color change to blue with "c"
 def color_swap():
-    drawer.pencolor("blue")
+    drawer.pencolor("purple")
 
 #color/drawing functions
 
@@ -100,6 +100,7 @@ wn.onkeypress(smaller_pen,"p")
 wn.onkeypress(clear,"space")
 wn.onkeypress(penup_down,"u")
 wn.onkeypress(color_swap,"c")
+wn.bgcolor("green")
 
 
 
